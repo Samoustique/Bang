@@ -16,10 +16,10 @@ public class Player : MonoBehaviour {
 		{
 			InputMovement();
 		}
-		else
+		/*else
 		{
 			SyncedMovement();
-		}
+		}*/
 	}
 	 
 	private void SyncedMovement()
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour {
             GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position - Vector3.right * speed * Time.deltaTime);
     }
 	
-	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
+	/*void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
 	{
 		Vector3 syncPosition = Vector3.zero;
 		if (stream.isWriting)
@@ -62,5 +62,5 @@ public class Player : MonoBehaviour {
 			syncStartPosition = GetComponent<Rigidbody>().position;
 			syncEndPosition = syncPosition;
 		}
-	}
+	}*/
 }
