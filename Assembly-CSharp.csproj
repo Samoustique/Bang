@@ -45,8 +45,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\NetworkManager.cs" />
-     <Compile Include="Assets\Script\Player.cs" />
+     <Compile Include="Assets\GameData\Card.cs" />
+     <Compile Include="Assets\GameData\Event.cs" />
+     <Compile Include="Assets\GameData\EventManager.cs" />
+     <Compile Include="Assets\GameData\Game.cs" />
+     <Compile Include="Assets\GameData\Hero.cs" />
+     <Compile Include="Assets\GameData\Player.cs" />
+     <Compile Include="Assets\GameData\Role.cs" />
+     <Compile Include="Assets\GameData\Target.cs" />
+     <Compile Include="Assets\Script\Draggable.cs" />
+     <Compile Include="Assets\Script\DropZone.cs" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
